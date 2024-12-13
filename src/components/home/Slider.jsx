@@ -40,7 +40,7 @@ export default function Slider() {
 
             {/* Stack screen */}
             <div className="flex lg:mt-10 justify-start  mt-5 md:flex-col items-center  px-3 md:ml-5 w-full md:mt-7 ">
-              <div className="w-full h-full md:pb-40 md:right-14 absolute right-7   lg:top-0 lg:p-32 top-[200px]">
+              <div className="w-full h-full md:pb-40 md:right-14 absolute right-7   lg:top-0 lg:p-32 top-[200px] pr-5 ">
                 <img
                   src={photo}
                   alt="photo"
