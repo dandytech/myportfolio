@@ -40,14 +40,6 @@ export default function Slider() {
 
             {/* Stack screen */}
             <div className="flex lg:mt-10 justify-start  mt-5 md:flex-col items-center  px-3 md:ml-5 w-full md:mt-7 ">
-              <div className="w-full h-full md:pb-40 md:right-14 absolute right-7   lg:top-0 lg:p-32 top-[180px] pr-5 ">
-                <img
-                  src={photo}
-                  alt="photo"
-                  className="md:w-full w-full  lg:h-full  md:h-[65vh] object-cover "
-                />
-              </div>
-
               <div className="flex md:justify-between md:gap-10  gap-3 items-center w-full md:px-0">
                 <div className="lg:absolute md:px-3  lg:left-[150px] lg:top-[150px] ">
                   {" "}
@@ -95,6 +87,14 @@ export default function Slider() {
                   </ContinuousZoom>
                 </div>
               </div>
+            </div>
+
+            <div className="absolute  top-[150px] m-1 lg:p-28 lg:top-0 h-full">
+              <img
+                src={photo}
+                alt="photo"
+                className="md:w-full w-full h-[40vh] lg:h-full  md:h-[65vh] md:p-20 lg:p-0 object-cover "
+              />
             </div>
           </div>
         </SwiperSlide>
