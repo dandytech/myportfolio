@@ -35,7 +35,7 @@ export default function Slider() {
 
             <div className="text-center  font-lato text-xl md:text-4xl pt-7">
               <p className="font-semibold text-red-800">Frontend Developer</p>
-              <p className="font-semibold italic">DANIEL AMAECHI NWANKWO</p>
+              <p className="font-inter font-[400] ">Daniel Amaechi Nwankwo</p>
             </div>
 
             {/* Stack screen */}
@@ -90,7 +90,7 @@ export default function Slider() {
             </div>
 
             {/* Photo screen */}
-            <div className="absolute  top-[200px] m-1 lg:p-28 lg:top-0 h-full">
+            <div className="absolute  top-[200px] mr-10 m-1 lg:p-28 lg:top-0 h-full">
               <img
                 src={photo}
                 alt="photo"
