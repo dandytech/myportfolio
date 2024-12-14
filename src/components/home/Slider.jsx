@@ -33,13 +33,13 @@ export default function Slider() {
           <div className="lg:relative pb-10 h-[100vh]  w-full">
             <div className="absolute inset-0 bg-[url('/src/assets/bg6.jpg')] bg-cover bg-center bg-no-repeat aspect-w-16 aspect-h-9 border border-b-red-200 opacity-10"></div>
 
-            <div className="text-center  font-lato text-xl md:text-4xl pt-5">
+            <div className="text-center  font-lato text-xl md:text-4xl pt-7">
               <p className="font-semibold text-red-800">Frontend Developer</p>
               <p className="font-semibold italic">DANIEL AMAECHI NWANKWO</p>
             </div>
 
             {/* Stack screen */}
-            <div className="flex lg:mt-10 justify-start  mt-5 md:flex-col items-center  px-3 md:ml-5 w-full md:mt-7 ">
+            <div className="flex lg:mt-10 justify-start  mt-10 md:flex-col items-center  px-3 md:ml-5 w-full md:mt-7 ">
               <div className="flex md:justify-between md:gap-10  gap-3 items-center w-full md:px-0">
                 <div className="lg:absolute md:px-3  lg:left-[150px] lg:top-[150px] ">
                   {" "}
@@ -89,7 +89,8 @@ export default function Slider() {
               </div>
             </div>
 
-            <div className="absolute  top-[150px] m-1 lg:p-28 lg:top-0 h-full">
+            {/* Photo screen */}
+            <div className="absolute  top-[200px] m-1 lg:p-28 lg:top-0 h-full">
               <img
                 src={photo}
                 alt="photo"

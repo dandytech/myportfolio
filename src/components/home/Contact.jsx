@@ -11,7 +11,7 @@ import { Tooltip } from "@material-tailwind/react";
 
 export default function Contact() {
   return (
-    <div className="absolute left-0 lg:top-[100px] md:top-[100px] top-[160px] flex flex-col md:gap-5 gap-2 md:text-2xl text-lg border p-3 border-slate-500 z-10 text-gray-200 bg-slate-800">
+    <div className="absolute left-0 lg:top-[100px] md:top-[100px] top-[190px] flex flex-col md:gap-5 gap-2 md:text-2xl text-lg border p-3 border-slate-500 z-10 text-gray-200 bg-slate-800">
       <a
         href="https://www.linkedin.com/in/daniel-amaechi-nwankwo-880880334/"
         target="-blank"
