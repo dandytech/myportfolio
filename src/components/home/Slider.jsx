@@ -90,11 +90,11 @@ export default function Slider() {
             </div>
 
             {/* Photo screen */}
-            <div className="absolute  top-[200px] mr-10 m-1 lg:p-28 lg:top-0 h-full">
+            <div className="absolute  top-[200px] mr-10  m-1 lg:p-28 lg:top-0 h-full">
               <img
                 src={photo}
                 alt="photo"
-                className="md:w-full w-full h-[40vh] lg:h-full  md:h-[65vh] md:p-20 lg:p-0 object-cover "
+                className="md:w-full w-full h-[35vh] lg:h-full  md:h-[65vh] md:p-20 lg:p-0 object-cover "
               />
             </div>
           </div>
