@@ -49,7 +49,7 @@ export default function Header() {
             </button>
           </div>
           <div
-            className={`text-center font-lato font-semibold bg-white pb-10 rounded-b-xl md:pb-0 md:rounded-b-0 h-[100vh] md:h-auto  ${
+            className={`text-center  mt-5 font-lato font-semibold bg-white pb-10 rounded-b-xl md:pb-0 md:rounded-b-0 h-[100vh] md:h-auto  ${
               !openMenu
                 ? "md:flex hidden justify-between items-center gap-3"
                 : " flex-col flex items-end absolute top-[60px] px-3 z-[1000] right-0"
