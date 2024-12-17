@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import logo from "../assets/dandyLogo.png";
 import { CiMenuFries } from "react-icons/ci";
@@ -9,13 +9,35 @@ import { Tooltip } from "@material-tailwind/react";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
-  const handleMenu = () => {
-    console.log("i was clicked");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-    setOpenMenu(!openMenu);
+  const menuRef = useRef(null);
+
+  const handleMenu = () => {
+    console.log("Menu toggled");
+    setOpenMenu((prev) => !prev);
   };
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && menuRef.current.contains(event.target)) {
+        setOpenMenu(false);
+      }
+    };
+
+    if (openMenu) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+    // Cleanup to prevent memory leaks
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [openMenu]);
+
+  //Modal funtiom
   const handleModal = () => {
     setIsModalOpen(!isModalOpen);
     if (openMenu) setOpenMenu(false);
@@ -49,7 +71,8 @@ export default function Header() {
             </button>
           </div>
           <div
-            className={`text-center  mt-5 font-lato font-semibold bg-white pb-10 rounded-b-xl md:pb-0 md:rounded-b-0 h-[100vh] md:h-auto  ${
+            ref={menuRef}
+            className={`text-center w-[90%] md:w-[50%] border m-auto  mt-10 font-lato font-semibold bg-white pb-10 rounded-b-xl md:pb-0 md:rounded-b-0 h-[100vh] md:h-auto  ${
               !openMenu
                 ? "md:flex hidden justify-between items-center gap-3"
                 : " flex-col flex items-end absolute top-[60px] px-3 z-[1000] right-0"
