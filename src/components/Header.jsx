@@ -72,7 +72,7 @@ export default function Header() {
           </div>
           <div
             ref={menuRef}
-            className={`text-center w-[90%] md:w-[50%] border m-auto  mt-10 font-lato font-semibold bg-white pb-10 rounded-b-xl md:pb-0 md:rounded-b-0 h-[100vh] md:h-auto  ${
+            className={`text-center w-[90%]  border m-auto  mt-10 font-lato font-semibold bg-white pb-10 rounded-b-xl md:pb-0 md:rounded-b-0 h-[100vh] md:h-auto  ${
               !openMenu
                 ? "md:flex hidden justify-between items-center gap-3"
                 : " flex-col flex items-end absolute top-[60px] px-3 z-[1000] right-0"
