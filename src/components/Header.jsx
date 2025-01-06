@@ -43,10 +43,10 @@ export default function Header() {
     if (openMenu) setOpenMenu(false);
   };
 
-  // https://drive.google.com/file/d/1t2elhLDtDHPVKDluR1iihgHDwpfTvOjb/view?usp=sharing
+  // https://drive.google.com/file/d/1TUkKY8M03Z9kUg1Np7lQZJer9aWtlV2r/view?usp=drive_link
 
   const cvUrl =
-    "https://drive.google.com/uc?export=download&id=1t2elhLDtDHPVKDluR1iihgHDwpfTvOjb";
+    "https://drive.google.com/uc?export=download&id=1TUkKY8M03Z9kUg1Np7lQZJer9aWtlV2r";
 
   return (
     <div className="w-full md:px-5 md:p-3 bg-gradient-to-t from-gray-0 to-red-50 border-b border-b-red-100">
