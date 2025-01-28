@@ -21,6 +21,7 @@ import react from "../src/assets/react.png";
 import next from "../src/assets/next.png";
 import tailwind from "../src/assets/tailwindcss.png";
 import styledcom from "../src/assets/styledcom.jpeg";
+import instashop from "../src/assets/instashop.png";
 
 const projects = [
   {
@@ -55,8 +56,18 @@ const projects = [
     site: "https://sharpapp.netlify.app/",
     stack: [react, tailwind, styledcom],
   },
+
   {
     id: 5,
+    name: "Insta Shop App",
+    photo: instashop,
+    code: "https://github.com/dandytech/dandy-instashop",
+    site: "https://dandy-instashop.vercel.app/",
+    stack: [next, tailwind],
+  },
+
+  {
+    id: 6,
     name: "Hotel Reservation/Booking App",
     photo: wideoasis,
     code: "https://github.com/dandytech/react-the-wild-oasis",
@@ -64,7 +75,7 @@ const projects = [
     stack: [react, tailwind, styledcom],
   },
   {
-    id: 6,
+    id: 7,
     name: "Landing page of NITAD website",
     photo: nitadImage,
     code: "https://github.com/dandytech/NITAD",
@@ -72,7 +83,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 7,
+    id: 8,
     name: "Landing page of Producemart website",
     photo: producemart,
     code: "https://github.com/dandytech/producemart",
@@ -80,7 +91,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 8,
+    id: 9,
     name: "Landing page of Primeparkland website",
     photo: primeparkland,
     code: "https://github.com/dandytech/primeparkland",
@@ -88,7 +99,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 9,
+    id: 10,
     name: "Landing page of CRAPPO Crypto website",
     photo: crypto,
     code: "https://github.com/dandytech/crypto",
@@ -96,7 +107,7 @@ const projects = [
     stack: [html, css, js],
   },
   {
-    id: 10,
+    id: 11,
     name: "Dashboard for Product Sales Firm",
     photo: dashboard,
     code: "https://github.com/dandytech/dashboard",
@@ -104,7 +115,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 11,
+    id: 12,
     name: "Admin Dashboard for Lagos Business School",
     photo: dashboard1,
     code: "https://github.com/dandytech/adminDashboard",
@@ -112,7 +123,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 12,
+    id: 13,
     name: "Input Validation/verification Page",
     photo: inputverify,
     code: "https://github.com/dandytech/inputConfirm",
@@ -120,7 +131,7 @@ const projects = [
     stack: [html, css, js],
   },
   {
-    id: 13,
+    id: 14,
     name: "Nexted Registration forms",
     photo: nextedreg,
     code: "https://github.com/dandytech/nextedreg",
@@ -128,7 +139,7 @@ const projects = [
     stack: [html, css, bootstrap],
   },
   {
-    id: 14,
+    id: 15,
     name: "Digital Architecture unscroll Page",
     photo: digitalarch,
     code: "https://github.com/dandytech/digitalarch",
