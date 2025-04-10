@@ -6,6 +6,7 @@ import Modal from "../ui/Modal";
 import SampleProjects from "./SampleProjects";
 import ContinuousZoom from "./home/ContinuousZoom";
 import { Tooltip } from "@material-tailwind/react";
+import DarkModeToggle from "../ui/DarkModeToggle";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -49,9 +50,9 @@ export default function Header() {
     "https://drive.google.com/uc?export=download&id=1TUkKY8M03Z9kUg1Np7lQZJer9aWtlV2r";
 
   return (
-    <div className="w-full md:px-5 md:p-3 bg-gradient-to-t from-gray-0 to-red-50 border-b border-b-red-100">
+    <div className="w-full md:px-5 md:p-3 bg-gradient-to-t from-gray-0 to-red-50 border-b border-b-red-100 bg-style text-style">
       <div className="flex justify-between items-center">
-        <div className="flex items-center justify-between gap-3 px-2">
+        <div className="flex items-center justify-between gap-3 px-2 bg-style text-style">
           <div>
             <img src={logo} alt="logo" width={100} />
           </div>
@@ -61,7 +62,11 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="px-3">
+        <div>
+          <DarkModeToggle />
+        </div>
+
+        <div className="px-3 ">
           <div>
             <button
               className="text-xl rounded-full md:hidden border p-2 font-bold font-lato"
@@ -72,19 +77,19 @@ export default function Header() {
           </div>
           <div
             ref={menuRef}
-            className={`text-center w-[90%]  border m-auto  mt-5 border-t-0 font-lato font-semibold bg-white pb-10 rounded-b-xl md:pb-0  md:rounded-b-0 h-[100vh] md:h-auto  ${
+            className={`text-center w-[90%]  border m-auto  mt-5 border-t-0 font-lato font-semibold bg-white bg-style text-style pb-10 rounded-b-xl md:pb-0  md:rounded-b-0 h-[100vh] md:h-auto  ${
               !openMenu
                 ? "md:flex hidden justify-between items-center gap-3"
                 : " flex-col flex items-end absolute top-[60px] px-3 z-[1000] right-0"
             } `}
           >
             <button
-              className="px-4 py-1 border border-b-black hover:bg-white hover:border-b-red-600"
+              className="px-4 py-1 border border-b-black hover:bg-white hover:border-b-red-600 bg-style text-style"
               onClick={handleModal}
             >
               <ContinuousZoom>Sample_Projects</ContinuousZoom>
             </button>
-            <button className="px-4 py-1 border border-b-black hover:bg-white hover:border-b-red-600">
+            <button className="px-4 py-1 border border-b-black hover:bg-white hover:border-b-red-600 bg-style text-style">
               <a href={cvUrl} download="DANIEL_AMAECHI_CV.pdf">
                 <Tooltip content="Download my CV" className="z-[1000]">
                   Resume
@@ -92,7 +97,7 @@ export default function Header() {
               </a>
             </button>
 
-            <button className="px-4 py-1 border border-b-black hover:bg-white hover:border-b-red-600">
+            <button className="px-4 py-1 border border-b-black hover:bg-white hover:border-b-red-600 bg-style text-style">
               <a href="https://wa.me/2347065123746" target="_blank">
                 <Tooltip content="Chat me on WhatsApp" className="z-[1000]">
                   Chat

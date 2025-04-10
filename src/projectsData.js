@@ -12,6 +12,7 @@ import kwarajobs from "../src/assets/kwarajobs.png";
 import sharpapp from "../src/assets/sharpapp.png";
 import wideoasis from "../src/assets/wideoasis.png";
 import thewildoasisweb from "../src/assets/the-wildoasis-web.png";
+import partnerGem from "../src/assets/partnerGem.png";
 
 import html from "../src/assets/html.jpeg";
 import css from "../src/assets/css.jpeg";
@@ -26,19 +27,19 @@ import instashop from "../src/assets/instashop.png";
 const projects = [
   {
     id: 1,
+    name: "PartnerGem Website",
+    photo: partnerGem,
+    code: "https://github.com/dandytech/partnergem.git",
+    site: "https://partnergem.netlify.app/",
+    stack: [react, tailwind],
+  },
+  {
+    id: 2,
     name: "The Wild Oasis Hotels",
     photo: thewildoasisweb,
     code: "https://github.com/dandytech/the-wild-oasis-website.git",
     site: "https://thewildoasishotels.vercel.app/",
     stack: [next, tailwind],
-  },
-  {
-    id: 2,
-    name: "Cyberspace LTE",
-    photo: cyberspacelte,
-    code: "https://github.com/dandytech/cyberspace_lte",
-    site: "https://cyberspacelte.netlify.app/home",
-    stack: [react, tailwind, styledcom],
   },
   {
     id: 3,
@@ -50,6 +51,14 @@ const projects = [
   },
   {
     id: 4,
+    name: "Cyberspace LTE",
+    photo: cyberspacelte,
+    code: "https://github.com/dandytech/cyberspace_lte",
+    site: "https://cyberspacelte.netlify.app/home",
+    stack: [react, tailwind, styledcom],
+  },
+  {
+    id: 5,
     name: "Home Service App",
     photo: sharpapp,
     code: "https://github.com/dandytech/sharp-sharp",
@@ -58,7 +67,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Insta Shop App",
     photo: instashop,
     code: "https://github.com/dandytech/dandy-instashop",
@@ -67,7 +76,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Hotel Reservation/Booking App",
     photo: wideoasis,
     code: "https://github.com/dandytech/react-the-wild-oasis",
@@ -75,7 +84,7 @@ const projects = [
     stack: [react, tailwind, styledcom],
   },
   {
-    id: 7,
+    id: 8,
     name: "Landing page of NITAD website",
     photo: nitadImage,
     code: "https://github.com/dandytech/NITAD",
@@ -83,7 +92,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 8,
+    id: 9,
     name: "Landing page of Producemart website",
     photo: producemart,
     code: "https://github.com/dandytech/producemart",
@@ -91,7 +100,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 9,
+    id: 10,
     name: "Landing page of Primeparkland website",
     photo: primeparkland,
     code: "https://github.com/dandytech/primeparkland",
@@ -99,7 +108,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 10,
+    id: 11,
     name: "Landing page of CRAPPO Crypto website",
     photo: crypto,
     code: "https://github.com/dandytech/crypto",
@@ -107,7 +116,7 @@ const projects = [
     stack: [html, css, js],
   },
   {
-    id: 11,
+    id: 12,
     name: "Dashboard for Product Sales Firm",
     photo: dashboard,
     code: "https://github.com/dandytech/dashboard",
@@ -115,7 +124,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 12,
+    id: 13,
     name: "Admin Dashboard for Lagos Business School",
     photo: dashboard1,
     code: "https://github.com/dandytech/adminDashboard",
@@ -123,7 +132,7 @@ const projects = [
     stack: [html, css, js, bootstrap],
   },
   {
-    id: 13,
+    id: 14,
     name: "Input Validation/verification Page",
     photo: inputverify,
     code: "https://github.com/dandytech/inputConfirm",
@@ -131,7 +140,7 @@ const projects = [
     stack: [html, css, js],
   },
   {
-    id: 14,
+    id: 15,
     name: "Nexted Registration forms",
     photo: nextedreg,
     code: "https://github.com/dandytech/nextedreg",
@@ -139,7 +148,7 @@ const projects = [
     stack: [html, css, bootstrap],
   },
   {
-    id: 15,
+    id: 16,
     name: "Digital Architecture unscroll Page",
     photo: digitalarch,
     code: "https://github.com/dandytech/digitalarch",

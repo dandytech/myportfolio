@@ -2,12 +2,12 @@ import projects from "../projectsData";
 
 export default function SampleProjects() {
   return (
-    <div className="bg-white p-3 mt-3 rounded-lg  h-auto ">
-      <p className="font-lato font-bold text-center md:text-xl text-lg w-[100%] mt-5">
+    <div className="bg-white p-3 mt-3 rounded-lg  h-auto bg-style text-style">
+      <p className="font-lato font-bold text-center md:text-xl text-lg w-[100%] mt-5 ">
         My Sample Projects
       </p>
 
-      <div className="grid lg:grid-cols-2 grid-col-1 mt-3 gap-5 w-full">
+      <div className="grid lg:grid-cols-2 grid-col-1 mt-3 gap-5 w-full bg-style text-style">
         {projects.map((project) => (
           <div key={project.id} className="w-full border p-3  items-center">
             <p className="w-full text-center md:text-xl text-lg font-lato border-b font-[600]">

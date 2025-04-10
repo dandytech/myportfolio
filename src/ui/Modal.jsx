@@ -22,8 +22,8 @@ export default function YesModal({ isModalOpen, onClose, children }) {
   }
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-container" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-overlay " onClick={onClose}>
+      <div className="modal-container " onClick={(e) => e.stopPropagation()}>
         <button
           className="px-2 text-xl text-red-500 absolute top-0 right-0"
           onClick={onClose}
