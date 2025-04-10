@@ -30,7 +30,7 @@ const projects = [
     name: "PartnerGem Website",
     photo: partnerGem,
     code: "https://github.com/dandytech/partnergem.git",
-    site: "https://partnergem.netlify.app/",
+    site: "https://dandypartnergem.netlify.app/",
     stack: [react, tailwind],
   },
   {
