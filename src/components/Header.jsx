@@ -56,7 +56,7 @@ export default function Header() {
           <div>
             <img src={logo} alt="logo" width={100} />
           </div>
-          <div className="md:text-xl  font-bold font-lato md:hidden lg:block text-sm ">
+          <div className="md:text-xl   font-bold font-lato hidden lg:block text-sm ">
             DANIEL<span className="text-white ">_</span>AMAECHI
             <span className="text-white">_</span>NWANKWO
           </div>
